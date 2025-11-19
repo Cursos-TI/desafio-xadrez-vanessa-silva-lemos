@@ -33,5 +33,33 @@ int main() {
         passoRainha++;
     } while (passoRainha <= casasRainha);
 
+    //Movimento Cavalo - loops aninhados
+    // O cavalo move 2 casas para baixo e 1 casa para a esquerda (L)
+    int casasBaixo = 2;
+    int casasEsquerda = 1;
+    printf("\nMovimento do Cavalo:\n");
+
+    for (int i = 1; i <= casasBaixo; i++) {
+        printf("Baixo\n"); // Uma casa para baixo em cada iteração
+    }
+    int j = 1;
+    while (j <= casasEsquerda) {
+        printf("Esquerda\n"); // Ao final, uma casa para esquerda
+        j++;
+    }
+    //Alternativamente para mostrar a estrutura aninhada:
+    /*
+    for (int i = 1; i <= 1; i++) {//só um "L"
+        for (int j = 1; j <= casasBaixo; j++) {
+            printf("Baixo\n");
+        }
+        int k = 1;
+        while (k <= casasEsquerda) {
+            printf("Esquerda\n");
+            k++;
+        }    
+    }
+    */
+
     return 0;
 }
